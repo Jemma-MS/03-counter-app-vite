@@ -24,7 +24,14 @@ export const CounterApp = ({ value }) => {
   const handleAdd = ( ) => {
     // se suma el valor counter en el hook en 1
     SetCounter( counter + 1 )
-    console.log( counter )
+  }
+
+  const handleSubtract = () => {
+    SetCounter( counter - 1 )
+  }
+
+  const handleReset = () => {
+    SetCounter( value )
   }
   
 
@@ -32,9 +39,10 @@ export const CounterApp = ({ value }) => {
     <>
         <h1>Counter App</h1>
         <h2> { counter } </h2>
-        <button onClick={ handleAdd }>
-          +1
-        </button>
+        <button onClick={ handleAdd }> +1 </button>
+        
+        <button onClick={ handleSubtract }> -1 </button>
+        <button onClick={ handleReset }> Reset </button>
     </> 
   )
 }
