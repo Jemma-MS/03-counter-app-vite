@@ -34,7 +34,6 @@ export const CounterApp = ({ value }) => {
     SetCounter( value )
   }
   
-
   return (
     <>
         <h1>Counter App</h1>
