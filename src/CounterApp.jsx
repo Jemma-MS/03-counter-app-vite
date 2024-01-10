@@ -20,7 +20,6 @@ export const CounterApp = ({ value }) => {
   // useState e el nombre del hook
   const [ counter, SetCounter ] = useState( 0 )
 
-
   const handleAdd = ( ) => {
     // se suma el valor counter en el hook en 1
     SetCounter( counter + 1 )
